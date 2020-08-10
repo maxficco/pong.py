@@ -34,8 +34,8 @@ ball.color("white")
 ball.shape("circle") #Circle Instead??
 ball.penup()
 ball.goto(0, 0)
-dx = 3
-dy = 3
+dx = 2.5
+dy = 2.5
 
 # pen
 scoreA = 0
