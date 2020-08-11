@@ -1,5 +1,6 @@
 import turtle
 import time
+import pygame #whhaaaaaattttt????  no working :(( poop 
 
 wn = turtle.Screen()
 wn.title("Max's Pong Game!")
@@ -127,11 +128,9 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 352.5) and (ball.ycor() < paddleB.ycor() + 49 and ball.ycor() > paddleB.ycor() - 49):
         dx *= -1
         ball.setx(340)
-
     if (ball.xcor() < -340 and ball.xcor() > -352.5) and (ball.ycor() < paddleA.ycor() + 49 and ball.ycor() > paddleA.ycor() - 49):
         dx *= -1
         ball.setx(-340)
-
     if scoreA == 10:
         pen.clear()
         pen.write("GAME OVER:  Player A Wins!", align="center", font=("Courier", 24, "normal"))
