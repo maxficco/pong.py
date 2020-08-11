@@ -1,6 +1,5 @@
 import turtle
 import time
-import pygame #whhaaaaaattttt????  no working :(( poop 
 
 wn = turtle.Screen()
 wn.title("Max's Pong Game!")
@@ -27,7 +26,7 @@ paddleB.shapesize(stretch_len=1, stretch_wid=5)
 paddleB.penup()
 paddleB.goto(350, 0)
 
-# ball 
+# ball
 
 ball = turtle.Turtle()
 ball.speed(0)
@@ -56,7 +55,7 @@ def paddle_a_up():
         print("stopp")
     else:
         y = paddleA.ycor()
-        y += 20
+        y += 30
         paddleA.sety(y)
 
 def paddle_a_down():
@@ -64,7 +63,7 @@ def paddle_a_down():
         print("stopp")
     else:
         y = paddleA.ycor()
-        y -= 20
+        y -= 30
         paddleA.sety(y)
 
 def paddle_b_up():
@@ -72,7 +71,7 @@ def paddle_b_up():
         print("stopp")
     else:
         y = paddleB.ycor()
-        y += 20
+        y += 30
         paddleB.sety(y)
 
 def paddle_b_down():
@@ -80,7 +79,7 @@ def paddle_b_down():
         print("stopp")
     else:
         y = paddleB.ycor()
-        y -= 20
+        y -= 30
         paddleB.sety(y)
 
 # Key Listeners
@@ -99,7 +98,7 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         dy *= -1
-    
+
     if ball.ycor() < -280:
         ball.sety(-280)
         dy *= -1
