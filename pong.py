@@ -1,6 +1,6 @@
 import turtle
 import time
-print("asdf")
+print("test")
 
 wn = turtle.Screen()
 wn.title("Max's Pong Game!")
