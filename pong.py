@@ -123,7 +123,7 @@ while True:
         time.sleep(1)
         dx = 2
         dy = 2
-    
+
     if (ball.xcor() > 340 and ball.xcor() < 352.5) and (ball.ycor() < paddleB.ycor() + 49 and ball.ycor() > paddleB.ycor() - 49):
         dx *= -1
         ball.setx(340)
