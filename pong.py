@@ -2,6 +2,7 @@ import turtle
 import time
 print("test")
 
+
 wn = turtle.Screen()
 wn.title("Max's Pong Game!")
 wn.bgcolor("black")
